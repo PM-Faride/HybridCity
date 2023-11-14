@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <!-- <script type="text/javascript" src="js/signupScript.js" defer></script> -->
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/1.png" type="image/x-icon">
+
+    <title>HBC</title>
+</head>
+
+<body>
+    <div class="wavy">
+        <span style="--i:1;">L</span>
+        <span style="--i:2;">o</span>
+        <span style="--i:3;">a</span>
+        <span style="--i:4;">d</span>
+        <span style="--i:5;">i</span>
+        <span style="--i:6;">n</span>
+        <span style="--i:7;">g</span>
+        <span style="--i:8;">.</span>
+        <span style="--i:9;">.</span>
+        <span style="--i:10;">.</span>
+    </div>
+    <div id="menu">
+        <ul id="menu-items">
+            <li class="contact">
+                <b></b>
+                <b></b>
+                <a href="#contact"> <i class="fas fa-phone"></i></a>
+                <span class="title">Contact Us</span>
+            </li>
+            <li class="our-team">
+                <b></b>
+                <b></b>
+                <a href="#our-team"> <i class="fas fa-users"></i></a>
+                <span class="title">The Team</span>
+
+            </li>
+            <li class="focus homeSection">
+                <b></b>
+                <b></b>
+                <a href="#homeSection"> <i class="fas fa-home"></i></a>
+                <span class="title">Home</span>
+
+            </li>
+            <li class="portfolio">
+                <b></b>
+                <b></b>
+                <a href="#portfolio"><i class="fas fa-image"></i></a>
+                <span class="title">Portfolio</span>
+
+            </li>
+            <li class="testimonial">
+                <b></b>
+                <b></b>
+                <a href="#testimonial"> <i class="fa fa-comments"></i></a>
+                <span class="title">Your Comments</span>
+
+            </li>
+            <li>
+                <!-- <b></b>
+                <b></b> -->
+                <a href="#" id="desktop-search"> <i class="fa fa-search"></i></a>
+                <span class="title">Search</span>
+
+            </li>
+            <li id="desktop-theme">
+                <!-- <b></b>
+                <b></b> -->
+                <a href="#"> <i class="fa fa-moon"></i></a>
+                <span class="title">Theme</span>
+
+            </li>
+        </ul>
+    </div>
+    <div id="pop-up-bg">
+        <div id="search-pop-up">
+            <div class="search-icon popUp searching">
+                <i class="fa fa-search"></i>
+            </div>
+            <input class="searching" type="text" placeholder="Search">
+        </div>
+    </div>
+    <!-- home-->
+    <div class="home section" id="homeSection">
+        <header>
+            <div id="logo">
+                <a href="#"><img src="images/1.png"></a>
+            </div>
+            <div id="search-box">
+                <span class="search-icon"><i class="fa fa-search"></i></span><input type="text" placeholder="Search"><span class="clear-search"><i class="far fa-times-circle"></i></span>
+            </div>
+            <div id="mobile-theme">
+                <span><i class="fa fa-moon"></i></span>
+            </div>
+            <div id="profileIcon">
+                <span><i class="fa fa-user-circle"></i></span>
+
+                <img src="images/profile.jpg" id="profileImage">
+            </div>
+        </header>
+        <div class="profileMenu">
+            <div class="profileIconMenu">
+                <span id="profile-signup">Sign Up</span>
+                <span id="profile-login">Login</span>
+            </div>
+            <div class="loggedInProfileMenu">
+                <span>Profile</span>
+                <span>Help</span>
+                <span>Sign Out</span>
+            </div>
+        </div>
+        <main>
+            <img id="mobile-main-image" src="images/mobile-main-img.png">
+            <img id="tablet-main-image" src="images/tablet-main-img.png">
+            <img id="desktop-main-image" src="images/desktop-main-img.png">
+            <div id="magnifier">
+            </div>
+            <div class="content-wrapper">
+                <div class="content">
+                    <h1 class="intro">Bring your business to the next level by a prestigious website.</h1>
+                    <p>Trust us with your website design</p>
+                </div>
+                <button type="button" class="register-btn">Register here</button>
+            </div>
+        </main>
+    </div>
+    <!-- register pop up -->
+    <section id="register-popup">
+        <div id="registerClose">
+        </div>
+        <div id="register-signup">
+            <div class="user login-box">
+                <div class="img-box">
+                    <img src="images/signup.jpeg">
+                </div>
+                <div class="form-box">
+                    <form>
+                        <h2>Sign In</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <input type="submit" value="Login">
+                        <p class="signup">Don't have an account?
+                            <a href="#">Sign up</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="user sign-up-box">
+                <div class="form-box">
+                    <form>
+                        <h2>Create an account</h2>
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="Enter Password">
+                        <input type="password" placeholder="Confirm Password">
+                        <input type="submit" value="Sign Up">
+                        <p class="signup">Already have an account? <a href="#">Sign in</a>
+                        </p>
+                    </form>
+                </div>
+                <div class="img-box">
+                    <img src="images/key.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end register-->
+    <!-- end home-->
+    <!--portfolio part-->
+    <div id="portfolio" class="section">
+        <div class="p-container">
+            <div class="p-item" id="active">
+                <div class="imgbox">
+                    <img src="images/portfilio/1 (2).jpg">
+                </div>
+
+                <div class="p-content" id="p1">
+                    <div class="p-text">
+                        <h3>portfolio one</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur, facilis, vel dolores dolore culpa aliquid maxime ratione quos sequi fugiat harum nihil, accusantium omnis quibusdam quisquam vero sapiente sit.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="p-item">
+                <div class="imgbox">
+                    <img src="images/portfilio/2 (2).jpg">
+                </div>
+
+                <div class="p-content" id="p2">
+                    <div class="p-text">
+                        <h3>portfolio one</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur, facilis, vel dolores dolore culpa aliquid maxime ratione quos sequi fugiat harum nihil, accusantium omnis quibusdam quisquam vero sapiente sit.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="p-item">
+                <div class="imgbox">
+                    <img src="images/portfilio/3 (2).jpg">
+                </div>
+
+                <div class="p-content" id="p3">
+                    <div class="p-text">
+                        <h3>portfolio one</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur, facilis, vel dolores dolore culpa aliquid maxime ratione quos sequi fugiat harum nihil, accusantium omnis quibusdam quisquam vero sapiente sit.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="p-item">
+                <div class="imgbox">
+                    <img src="images/portfilio/4 (2).jpg">
+                </div>
+
+                <div class="p-content" id="p4">
+                    <div class="p-text">
+                        <h3>portfolio one</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur, facilis, vel dolores dolore culpa aliquid maxime ratione quos sequi fugiat harum nihil, accusantium omnis quibusdam quisquam vero sapiente sit.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="p-item">
+                <div class="imgbox">
+                    <img src="images/portfilio/5 (2).jpg">
+                </div>
+
+                <div class="p-content" id="p5">
+                    <div class="p-text">
+                        <h3>portfolio one</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur, facilis, vel dolores dolore culpa aliquid maxime ratione quos sequi fugiat harum nihil, accusantium omnis quibusdam quisquam vero sapiente sit.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="p-item">
+                <div class="imgbox">
+                    <img src="images/portfilio/6 (2).jpg">
+                </div>
+
+                <div class="p-content" id="p6">
+                    <div class="p-text">
+                        <h3>portfolio one</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit consectetur, facilis, vel dolores dolore culpa aliquid maxime ratione quos sequi fugiat harum nihil, accusantium omnis quibusdam quisquam vero sapiente sit.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--end portfolio-->
+    <!--contact us-->
+    <div id="our-team" class="section">
+        <div class="person-box">
+            <div class="imgBox">
+                <img src="images/profile.jpg">
+            </div>
+            <div class="introduction">
+                <h2>Faridesadat Dehghan<br>
+                    <span>Cheif Executive Officer</span>
+                </h2>
+            </div>
+        </div>
+        <div class="person-box">
+            <div class="imgBox">
+                <img src="images/p2.jpeg">
+            </div>
+            <div class="introduction">
+                <h2>Hamide Negahdar<br>
+                    <span>Cheif Executive Officer</span>
+                </h2>
+            </div>
+        </div>
+        <div class="person-box">
+            <div class="imgBox">
+                <img src="images/patmat.jpg">
+            </div>
+            <div class="introduction">
+                <h2>Pat and Mat<br>
+                    <span>Programmers</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!--end contact us-->
+    <!--comments-->
+    <div id="testimonial" class="section">
+
+        <div class="t-container">
+            <div class="t-wrapper">
+                <div class="t-card">
+                    <div class="t-card-thumb">
+                        <img src="images/testimonial/bill gates.jpg" class="t-client-img" alt="">
+                        <span class="t-client-name">Bill Gates</span>
+                    </div>
+                    <div class="t-card-body">
+                        <p class="t-review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                        <div class="t-rating">
+                            <img src="images/testimonial/cry.png" class="t-star" alt="">
+                            <img src="images/testimonial/sad.png" class="t-star" alt="">
+                            <img src="images/testimonial/poker.png" class="t-star" alt="">
+                            <img src="images/testimonial/smile.png" class="t-star" id="t-bold" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="t-card">
+                    <div class="t-card-thumb">
+                        <img src="images/testimonial/steve jobz.jpg" class="t-client-img" alt="">
+                        <span class="t-client-name">Steve Jobz</span>
+                    </div>
+                    <div class="t-card-body">
+                        <p class="t-review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                        <div class="t-rating">
+                            <img src="images/testimonial/cry.png" class="t-star" alt="">
+                            <img src="images/testimonial/sad.png" class="t-star" alt="">
+                            <img src="images/testimonial/poker.png" class="t-star" alt="">
+                            <img src="images/testimonial/smile.png" class="t-star" id="t-bold" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="t-card">
+                    <div class="t-card-thumb">
+                        <img src="images/testimonial/elon-musk.jpeg" class="t-client-img" alt="">
+                        <span class="t-client-name">Elon Musk</span>
+                    </div>
+                    <div class="t-card-body">
+                        <p class="t-review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, nam. Fugiat, ut provident. Nulla quibusdam labore ea est consequatur sequi fuga iusto laudantium, earum doloremque?</p>
+                        <div class="t-rating">
+                            <img src="images/testimonial/cry.png" class="t-star" alt="">
+                            <img src="images/testimonial/sad.png" class="t-star" alt="">
+                            <img src="images/testimonial/poker.png" class="t-star" alt="">
+                            <img src="images/testimonial/smile.png" class="t-star" id="t-bold" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="t-indicators">
+                <button class="t-active"></button>
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <!--end comments-->
+    <!--contact us-->
+    <div class="section" id="contact">
+        <div class="contact-us">
+            <div class="c-container">
+                <div class="contact-info">
+                    <div>
+                        <h3>contact info</h3>
+                        <ul class="info">
+                            <li>
+                                <span><i class="fas fa-map-marker"></i></span>
+                                <span>address:loem ipsum</span>
+                            </li>
+                            <li>
+                                <span><i class="fa fa-envelope"></i></span>
+                                <span>mail:mail@hbc.com</span>
+                            </li>
+                            <li>
+                                <span><i class="fas fa-phone"></i></span>
+                                <span>phone:035123456</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="socialicon">
+                            <li><a herf="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a herf="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a herf="#"><i class="fab fa-facebook"></i></a></li>
+                            <li><a herf="#"><i class="fab fa-pinterest"></i></a></li>
+                            <li><a herf="#"><i class="fab fa-telegram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>send a message</h2>
+                    <div class="formbox">
+                        <div class="inputbox w50">
+                            <input type="text" required>
+                            <span>  first name </span>
+                        </div>
+                        <div class="inputbox w50">
+                            <input type="text" required>
+                            <span>  last name </span>
+                        </div>
+                        <div class="inputbox w50">
+                            <input type="email" required>
+                            <span>  email address </span>
+                        </div>
+                        <div class="inputbox w50">
+                            <input type="email" required>
+                            <span>  mobile number </span>
+                        </div>
+                        <div class="inputbox w100">
+                            <textarea type="email" required></textarea>
+                            <span>  write message here ... </span>
+                        </div>
+                        <div class="inputbox w100">
+                            <input type="submit" value="send">
+                            <span>   </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end contact us-->
+
+</body>
+
+</html>
